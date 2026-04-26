@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(135deg,#012d12,#001a09,#013b18);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+
+.poster{
+    width:850px;
+    background: linear-gradient(145deg,#0b2411,#14532d,#0b2411);
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    color:white;
+    box-shadow:
+    0 0 40px rgba(0,0,0,.55),
+    inset 0 0 30px rgba(255,255,255,.04);
+    position:relative;
+    overflow:hidden;
+}
+
+.poster::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:
+    linear-gradient(120deg,transparent,rgba(255,255,255,.04),transparent);
+    pointer-events:none;
+}
+
+.top-design{
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:linear-gradient(45deg,#ffea00,#ffea00);
+    opacity:.50;
+    transform:rotate(45deg);
+}
+
+.left{
+    top:-90px;
+    left:-90px;
+}
+
+.right{
+    bottom:-90px;
+    right:-90px;
+}
+
+.logo-circle{
+    width:150px;
+    height:150px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(145deg,#f5d76e,#8c6b00);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    color:#123a18;
+    font-size:22px;
+    box-shadow:0 0 18px rgba(255,215,0,.35);
+}
+
+.school-name{
+    margin-top:18px;
+    font-size:28px;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.advisory-box{
+    margin-top:28px;
+    background:linear-gradient(to right,#8c6b00,#d4af37,#8c6b00);
+    color:white;
+    font-size:85px;
+    font-weight:900;
+    padding:18px;
+    border-radius:14px;
+    letter-spacing:4px;
+    text-shadow:2px 2px 8px rgba(0,0,0,.3);
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.subtext{
+    margin-top:18px;
+    font-size:18px;
+    opacity:.9;
+}
+
+.announcement-area{
+    margin-top:35px;
+}
+
+input{
+    width:85%;
+    padding:16px;
+    border:4px solid #d8a316;
+    border-radius:12px;
+    font-size:18px;
+    outline:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+button{
+    margin-top:18px;
+    padding:14px 35px;
+    font-size:18px;
+    font-weight:bold;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(to right,#8c6b00,#d4af37);
+    color:white;
+    cursor:pointer;
+    transition:.3s ease;
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+}
+
+#outputBox{
+    margin-top:28px;
+    min-height:10px;
+    padding:22px;
+    border:4px solid #d8a316;
+    border-radius:16px;
+    background:rgba(255,255,255,.08);
+    font-size:28px;
+    font-weight:500;
+    line-height:0.9;
+    box-shadow:inset 12px rgba(255, 255, 255, 0.05);
+
+
+}
+
+.footer{
+    margin-top:20px;
+    font-size:16px;
+    letter-spacing:1px;
+    opacity:.8;
+}
+
+@media(max-width:900px){
+.poster{
+    width:100%;
+    padding:25px;
+}
+.advisory-box{
+    font-size:55px;
+}
+.school-name{
+    font-size:22px;
+}
+#outputBox{
+    font-size:22px;
+}
+input{
+    width:100%;
+}
+}
